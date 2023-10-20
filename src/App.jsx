@@ -12,14 +12,22 @@ const App = () => (
     <div className={`bg-primary ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
         <Hero />
+        <Stats />
+
       </div>
     </div>
+    <Business />
     
-    <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+
+    <div className={` ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
-        <Stats />
-        <Business />
         <Billing />
+      </div>
+    </div>
+
+    <div className={` ${styles.paddingX} ${styles.flexCenter}`}>
+      <div className={`${styles.boxWidth}`}>
+        
         <CardDeal />
         <Testimonials />
         <Clients />
